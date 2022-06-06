@@ -35,6 +35,7 @@ def turtle_circle():
     turtle.circle(100)
 
 
+# Нарисовать вложенные квадраты (Упражнение 5)
 def turtle_inner_square():
     turtle.shape('turtle')
     r = 20
@@ -42,11 +43,27 @@ def turtle_inner_square():
     for i in range(10):
         turtle.circle(r, 360, 4)
         turtle.penup()
-        turtle.goto(r-r/4, -r+r/4)
+        turtle.goto(r - r / 4, -r + r / 4)
         turtle.pendown()
         r = r + 20
+
+
+# Нарисовать паука, где n = 12 (Упражнение 6)
+def turtle_spider():
+    turtle.shape('turtle')
+    #turtle.delay(200)
+    x, y = 0, 0
+    turtle.goto(0, 0)
+    n = 12
+    for i in range(n):
+        turtle.forward(100)
+        turtle.left(540)
+        turtle.forward(100)
+        turtle.right(360/n)
+
 
 # turtle_square()
 # turtle_s_draw()
 # turtle_circle()
 # turtle_inner_square()
+turtle_spider()
