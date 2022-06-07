@@ -50,20 +50,22 @@ def turtle_inner_square():
 
 # Нарисовать паука, где n = 12 (Упражнение 6)
 def turtle_spider():
-    turtle.shape('turtle')
-    #turtle.delay(200)
-    x, y = 0, 0
+    turtle.shape("turtle")
     turtle.goto(0, 0)
+
     n = 12
+
     for i in range(n):
-        turtle.forward(100)
-        turtle.left(540)
-        turtle.forward(100)
-        turtle.right(360/n)
+        turtle.forward(150)
+        turtle.stamp()
+        turtle.left(360)
+        turtle.backward(150)
+        turtle.left(360)
+        turtle.right(360 / n)
 
 
 # turtle_square()
 # turtle_s_draw()
 # turtle_circle()
 # turtle_inner_square()
-turtle_spider()
+# turtle_spider()
