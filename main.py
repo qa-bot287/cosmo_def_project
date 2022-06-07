@@ -1,4 +1,5 @@
 import turtle
+from math import pi, sin, cos
 
 
 # Нарисовать букву S (Упражнение 2)
@@ -64,8 +65,18 @@ def turtle_spider():
         turtle.right(360 / n)
 
 
+def spiral():
+    turtle.shape('turtle')
+    turtle.delay(50)
+    for i in range(200):
+        t = i / 10 * pi
+        dx = t * cos(t)
+        dy = t * sin(t)
+        turtle.goto(dx, dy)
+
 # turtle_square()
 # turtle_s_draw()
 # turtle_circle()
 # turtle_inner_square()
 # turtle_spider()
+# spiral()
